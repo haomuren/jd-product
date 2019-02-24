@@ -36,12 +36,6 @@ gulp.task("copyCss",function(){
 })
 
 
-gulp.task("watch",function(){
-	gulp.watch("*.html",["copyIndex"]);
-	gulp.watch("css/*.css",["csscompress"]);
-})
-
-
 gulp.task("server",function(){
 	connect.server({
 		root:"dist",
@@ -54,14 +48,30 @@ gulp.task("default",["server","watch"]);
 
 
 gulp.task('scripts',function(){
-	return gulp.src("js/*.js")//所有is下的js文件
-	.pipe(concat('mix.js'))//合并的文件名  想好写
-	.pipe(gulp.dest('dist/js'))
+	return gulp.src(["js/index.js","js/cart.js","js/detail.js","js/list.js","js/login.js","js/regist.js"])//所有is下的js文件
+	.pipe(concat('mix.js'))//合并的文件名    混合
+	.pipe(gulp.dest('dist/js'))//放到dist的js文件夹里
 	.pipe(uglify())//压缩
-	.pipe(rename('mix.min.js'))//压缩以后文件名更名
+	.pipe(rename('mix.min.js'))//压缩以后文件名重命名
 	.pipe(gulp.dest('dist/js')); 
 })
 
+gulp.task("sass",function(){
+	gulp.src("sass/*.scss")
+	.pipe(sourcemaps.init())//关联起来 初始化
+	.pipe(sass({outputStyle:"compressed"}))//深压缩
+	.pipe(sourcemaps.write())
+	.pipe(gulp.dest("dist/css"))
+	.pipe(connect.reload());
+})
+
+
+gulp.task("watch",function(){//监控并自动刷新
+	gulp.watch("*.html",["copyIndex"]);
+	gulp.watch("sass/*.scss",["sass"]);
+	//还要写js 看到时候js压缩写到那  先监听这两个 index 和 sass
+	//图片回来copy带dis里面
+})
 
 
 gulp.task('csscompress',function(){ 
@@ -70,5 +80,7 @@ gulp.task('csscompress',function(){
 	.pipe(gulp.dest('dist/css'))
 	.pipe(cleancss())
 	.pipe(rename('mix.min.css'))//压缩以后添加的文件名
-	.pipe(gulp.dest('dist/css'));//再把压缩的文件添加dist
+	.pipe(gulp.dest('dist/css'))//再把压缩的文件添加dist
+	.pipe(connect.reload());
 })
+
