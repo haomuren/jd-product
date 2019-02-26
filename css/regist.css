@@ -1,0 +1,240 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+/*regit  头部部分  logo   text*/
+.regist-header{
+	height: 110px;
+	background-image: url(../img/registboder.jpg);
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+.regist-logo{
+	width: 160px;
+	height: 50px;
+	float: left;
+	margin-top: 20px;
+	margin-left: 110px;
+	background-image: url(../img/registlogo.png);
+	background-repeat: no-repeat;
+}
+.regist-title{
+	float: left;
+	width: 96px;
+	height: 34px;
+	line-height: 34px;
+	font-size: 24px;
+	color: #333;
+	margin-top: 34px;
+}
+.have-account{
+	width: 146px;
+	height: 21px;
+	line-height: 21px;
+	color: #999;
+	font-size: 16px;
+	float: right;
+	margin-top: 60px;
+	margin-right: 140px;
+}
+.have-account p{
+	display: block;
+	float: left;
+}
+.have-account a{
+	display: block;
+	float: left;
+	color: #e22;
+}
+
+
+/*regit  内容部分    表单注册*/
+.regist-content{
+	width: 1210px;
+	height: 350px;
+	margin: 0 auto;
+}
+.regist-message{
+	margin: 80px auto 0;
+	width: 400px;
+	border-top: 1px dotted #CCCCCC;
+}
+.message-title{
+	float: left;
+	width: 400px;
+	height: 24px;
+	line-height: 24px;
+	font-size: 16px;
+	color: #333;
+	text-align: center;
+	margin-top: 10px;
+}
+.message-username{
+	float: left;
+	width: 400px;
+	height: 30px;
+	color: #333;
+	font-size: 16px;
+	margin-top: 10px;
+}
+.message-username p{
+	display: block;
+	float: left;
+	width: 90px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	margin-left: 40px;
+	border: 1px solid #CCCCCC;
+}
+.message-username input{
+	float: left;
+	width: 200px;
+	height: 30px;
+	border: 1px solid #CCCCCC;
+	border-left: none;
+}
+#username-hint{
+	width: 200px;
+	height: 12px;
+	font-size: 12px;
+	color: #F10214;
+	float: left;
+	margin-left: 40px;
+}
+.message-password{
+	float: left;
+	width: 400px;
+	height: 30px;
+	color: #333;
+	font-size: 16px;
+	margin-top: 20px;
+}
+.message-password p{
+	display: block;
+	float: left;
+	width: 90px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	margin-left: 40px;
+	border: 1px solid #CCCCCC;
+}
+.message-password input{
+	float: left;
+	width: 200px;
+	height: 30px;
+	border: 1px solid #CCCCCC;
+	border-left: none;
+}
+#password-hint{
+	width: 200px;
+	height: 12px;
+	font-size: 12px;
+	color: #F10214;
+	float: left;
+	margin-left: 40px;
+}
+.message-email{
+	float: left;
+	width: 400px;
+	height: 30px;
+	color: #333;
+	font-size: 16px;
+	margin-top: 20px;
+}
+.message-email p{
+	display: block;
+	float: left;
+	width: 90px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	margin-left: 40px;
+	border: 1px solid #CCCCCC;
+}
+.message-email input{
+	float: left;
+	width: 200px;
+	height: 30px;
+	border: 1px solid #CCCCCC;
+	border-left: none;
+}
+#email-hint{
+	width: 200px;
+	height: 12px;
+	font-size: 12px;
+	color: #F10214;
+	float: left;
+	margin-left: 40px;
+}
+.message-gender{
+	float: left;
+	width: 292px;
+	height: 30px;
+	color: #333;
+	font-size: 16px;
+	margin-top: 20px;
+	border: 1px solid #CCCCCC;
+	margin-left: 40px;
+}
+.message-gender p{
+	display: block;
+	float: left;
+	width: 90px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-right: 1px solid #CCCCCC;
+}
+#gender-man{
+	float: left;
+	width: 25px;
+	height: 15px;
+	margin-top: 8px;
+	margin-left: 30px;
+}
+#gender-woman{
+	width: 25px;
+	height: 15px;
+	margin-top: 8px;
+	margin-left: 30px;
+}
+#gender-hint{
+	width: 200px;
+	height: 12px;
+	font-size: 12px;
+	color: #F10214;
+	float: left;
+	margin-left: 40px;
+}
+#regist-mess{
+	float: left;
+	width: 295px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 16px;
+	margin-top: 20px;
+	border: none;
+	background: #E43F3B;
+	margin-left: 40px;
+	color: #fff;
+	cursor: pointer;
+}
+#regist-hint{
+	width: 200px;
+	height: 12px;
+	font-size: 12px;
+	text-align: center;
+	color: #F10214;
+	float: left;
+	margin-left: 40px;
+}
