@@ -2,8 +2,59 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>京东-欢迎注册</title>
+		<link rel="stylesheet" href="css/regist.css" />
 	</head>
 	<body>
+		<div class="regist-header">
+			<a href="#" class="regist-logo"></a>
+			<div class="regist-title">
+				欢迎注册
+			</div>
+			<div class="have-account">
+				<p>已有账号？</p>
+				<a href="http://127.0.0.1:8020/jd-project/login.html">请登录＞</a>
+			</div>
+		</div>
+		<div class="regist-content">
+			<div class="regist-message">
+				<form>
+					<div class="message-title">
+						请填写注册信息 :
+					</div>
+					<div class="message-username">
+						<p>用户名 :</p>
+						<input id="username" type="text" value=""/>
+					</div>
+					<div id="username-hint"></div>
+					<div class="message-password">
+						<p>密&nbsp;&nbsp;码 :</p>
+						<input id="password" type="text" value=""/>
+					</div>
+					<div id="password-hint"></div>
+					<div class="message-email">
+						<p>邮&nbsp;&nbsp;箱 :</p>
+						<input id="email" type="text" value=""/>
+					</div>
+					<div id="email-hint"></div>
+					<div class="message-gender">
+						<p>性&nbsp;&nbsp;别 :</p>
+						<input id="gender-man" type="radio" value="man" name="sex"/>&nbsp;男
+						<input id="gender-woman" type="radio" value="woman" name="sex"/>&nbsp;女
+					</div>
+					<div id="gender-hint"></div>
+					<input id="regist-mess" type="button" value="点击按钮完成注册"/>
+					<div id="regist-hint"></div>
+				</form>
+			</div>
+		</div>
+		
+		<div class="regist-footer">
+			<img src="img/registfooter.png" />
+		</div>
+		
+		
+		<script src="js/jquery-1.11.0.js" ></script>
+		<script src="js/regist.js"></script>
 	</body>
 </html>
