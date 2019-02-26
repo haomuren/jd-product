@@ -182,8 +182,8 @@
 						<!--头部右半部分-->
 						<li class="topfr_item1">
 							<!--请登录     免费注册-->
-							<a href="#" class="link_login">你好，请登录</a>&nbsp;&nbsp;
-							<a href="#" class="link_regist">免费注册</a>
+							<a href="http://127.0.0.1:8020/jd-project/login.html" class="link_login">你好，请登录</a>&nbsp;&nbsp;
+							<a href="http://127.0.0.1:8020/jd-project/regist.html" class="link_regist">免费注册</a>
 						</li>
 						<li class="bar"></li>
 						<!--竖条-->
@@ -579,18 +579,20 @@
 			<div class="header-main">
 				<div class="logo">
 					<h1 class="logo_title">
-						<a href="#">京东</a>
+						<a href="http://127.0.0.1:8020/jd-project/index.html">京东</a>
 					</h1>
 				</div>
-				<div class="search">
+				<div class="search" id="search">
 					<div class="search_box">
 						<div class="search_bg">
 
 						</div>
-						<input type="text" id="key" class="search_text" placeholder="Boston celtics" style="background: transparent;" />
+						<input type="text" id="key" class="search_text" placeholder="Boston celtics" />
 						<span class="search_photo"></span>
 						<button class="search_button"></button>
-						<ul id="jiekou" class="jiekou" style="display: none;"></ul>
+						<ul id="jiekou" class="jiekou" style="display: none;">
+							<input />
+						</ul>
 					</div>
 				</div>
 				<div class="shop_cart">
@@ -663,16 +665,14 @@
 			</div>
 		</div>
 
-
-
 		<div class="contentouter">
 			<div class="content">
 				<div class="content-partone">
 					<ul class="lists">
-	
+
 					</ul>
 				</div>
-				
+
 				<div class="content-parttwo1">
 					<!--ul中存放所有图片,图片大小保持一致-->
 					<div class="content-parttwo">
@@ -740,49 +740,57 @@
 				</div>
 				<div class="content-partthree">
 					<div class="partthree1">
-						<a href="#"><img src=""/></a>
+						<a href="#"><img src="img/bannersmall1.png" /></a>
 					</div>
 					<div class="partthree2">
-						<a href="#"><img src=""/></a>
+						<a href="#"><img src="img/bannersmall2.png" /></a>
 					</div>
 					<div class="partthree3">
-						<a href="#"><img src=""/></a>
+						<a href="#"><img src="img/bannersmall3.png" /></a>
 					</div>
 				</div>
+
 				<div class="content-partfour">
 					<div class="partfour1">
 						<div class="partfour1-img">
 							<a href="#">
-								<img src="" />
+								<img src="img/bannercry.png" />
 							</a>
 						</div>
 						<div class="partfour1-text">
-							<p></p>
-							<a href="#" class="partfour1-login"></a>
-							<a href="#" class="partfour1-regist"></a>
+							<p>Hi~欢迎来到京东！</p>
+							<div class="partfour1-text1">
+								<a href="http://127.0.0.1:8020/jd-project/login.html" class="partfour1-login">登录</a>
+								<a href="http://127.0.0.1:8020/jd-project/regist.html" class="partfour1-regist">注册</a>
+							</div>
+
 						</div>
 						<div class="partfour1-link">
-							<a href="#" class="newpeople"></a>
-							<a href="#" class="plusmember"></a>
+							<a href="#" class="newpeople">新人福利</a>
+							<a href="#" class="plusmember">PLUS会员</a>
 						</div>
 					</div>
 					<div class="partfour2">
 						<div class="partfour2-news">
-							<h5 class="news-title"></h5>
-							<a href="#"></a>
+							<h5 class="news-title">京东快报</h5>
+							<a href="#">更多 ></a>
 						</div>
 						<ul class="partfour2-list">
 							<li class="partfour2-list1">
-								<a href="#" class="list1-link"><span></span></a>
+								<span>公告</span>
+								<a href="#" class="list1-link">京东启用全新客服电..</a>
 							</li>
 							<li class="partfour2-list2">
-								<a href="#" class="list2-link"><span></span></a>
+								<span>活动</span>
+								<a href="#" class="list2-link">优选好货优选好货....</a>
 							</li>
 							<li class="partfour2-list3">
-								<a href="#" class="list3-link"><span></span></a>
+								<span>热门</span>
+								<a href="#" class="list3-link">iPhone XR再见了！...</a>
 							</li>
 							<li class="partfour2-list4">
-								<a href="#" class="list4-link"><span></span></a>
+								<span>推荐</span>
+								<a href="#" class="list4-link">华为终于正式使用...</a>
 							</li>
 						</ul>
 					</div>
@@ -790,78 +798,615 @@
 						<ul class="partfour3-service">
 							<li class="service-list1">
 								<a href="#">
-									<img src="" />
+									<img src="img/serlist1.png" />
 								</a>
 							</li>
 							<li class="service-list2">
 								<a href="#">
-									<img src="" />
+									<img src="img/serlist2.png" />
 								</a>
 							</li>
 							<li class="service-list3">
 								<a href="#">
-									<img src="" />
+									<img src="img/serlist3.png" />
 								</a>
 							</li>
 							<li class="service-list4">
 								<a href="#">
-									<img src="" />
+									<img src="img/serlist4.png" />
 								</a>
 							</li>
 							<li class="service-list5">
 								<a href="#">
-									<img src="" />
+									<img src="img/serlist5.png" />
 								</a>
 							</li>
 							<li class="service-list6">
 								<a href="#">
-									<img src="" />
+									<img src="img/serlist6.png" />
 								</a>
 							</li>
 							<li class="service-list7">
 								<a href="#">
-									<img src="" />
+									<img src="img/serlist7.png" />
 								</a>
 							</li>
 							<li class="service-list8">
 								<a href="#">
-									<img src="" />
+									<img src="img/serlist1.png" />
 								</a>
 							</li>
 							<li class="service-list9">
 								<a href="#">
-									<img src="" />
+									<img src="img/serlist4.png" />
 								</a>
 							</li>
 							<li class="service-list10">
 								<a href="#">
-									<img src="" />
+									<img src="img/serlist3.png" />
 								</a>
 							</li>
 							<li class="service-list11">
 								<a href="#">
-									<img src="" />
+									<img src="img/serlist5.png" />
 								</a>
 							</li>
 							<li class="service-list12">
 								<a href="#">
-									<img src="" />
+									<img src="img/serlist1.png" />
 								</a>
 							</li>
-							<div class="service-tebie1">
-								<img src="" />
-							</div>
-							<div class="service-tebie2">
-								<img src="" />
-							</div>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
 
+		<div class="jd-seckill">
+			<div class="seckill">
+				<a href="#" class="seckillpart1">
+					<div class="seckill-title">京东秒杀</div>
+					<div class="seckill-eng">FLASH DEALS</div>
+					<span class="seckill-icon"><img src="img/miaosha.png"/></span>
+					<div class="seckill-coutdown">本场距离结束还剩</div>
+					<div class="sk-showtime" id="sk-showtime">
+						<div class="line"></div>
+						<div class="sk-hour"><span class="hour-txt" id="hour-txt">00</span></div>
+						<div class="sk-minute"><span class="minute-txt" id="minute-txt">00</span></div>
+						<div class="sk-second"><span class="second-txt" id="second-txt">00</span></div>
+					</div>
+				</a>
+				<div class="seckillpart2">
+					<div class="seckillpart2-lubo1">
+						<button class="lubo1-btnleft"><span><</span></button>
+						<a href="#" class="lubo1-link1">
+							<img src="img/sk1.png" />
+							<p>威刚(ADATA)XPG-龙...</p>
+							<div class="price">
+								<div>¥389.00</div>
+								<span>¥&nbsp;<s>999.00</s></span>
+							</div>
+						</a>
+						<a href="#" class="lubo1-link2">
+							<img src="img/sk2.png" />
+							<p>俏香阁 坚果大礼包13..</p>
+							<div class="price">
+								<div>¥49.00</div>
+								<span>¥&nbsp;<s>99.00</s></span>
+							</div>
+						</a>
+						<a href="#" class="lubo1-link3">
+							<img src="img/sk3.png" />
+							<p>联想(Lenovo)拯救者Y...</p>
+							<div class="price">
+								<div>¥7888.00</div>
+								<span>¥&nbsp;<s>9999.00</s></span>
+							</div>
+						</a>
+						<a href="#" class="lubo1-link4">
+							<img src="img/sk4.png" />
+							<p>乐扣乐扣(LOCK&LO...)</p>
+							<div class="price">
+								<div>¥115.00</div>
+								<span>¥&nbsp;<s>121.00</s></span>
+							</div>
+						</a>
+						<button class="lubo1-btnright"><span>></span></button>
+					</div>
+					<div class="seckillpart2-lubo2">
+						<div class="lubo2-main">
+							<ul>
+								<li>
+									<a href="#">
+										<img src="img/sk-lubo1.jpg" alt="" class="img1">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="img/sk-lubo2.jpg" alt="" class="img2">
+									</a>
+								</li>
+							</ul>
+							<div class="lubo2-dot">
+								<span class="dot"></span>
+								<span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="rankingpart">
+			<div class="rankingpart-main">
+				<div class="rpm-part1">
+					<div class="rpm-p1">
+						<a href="#">
+							<h5>排行榜</h5>
+							<img src="img/indexjiantou.png" />
+							<span>专属你的购物指南</span>
+						</a>
+					</div>
+					<div class="rpm-p2">
+						<div class="p2-head">
+							<div class="head1">
+								<a href="#">大家电</a>
+							</div>
+							<div class="head2">
+								<a href="#">休闲食品</a>
+							</div>
+							<div class="head3">
+								<a href="#">奶粉</a>
+							</div>
+							<div class="head4">
+								<a href="#">手机</a>
+							</div>
+							<div class="head5">
+								<a href="#">香水彩妆</a>
+							</div>
+						</div>
+						<div class="p2-body">
+							<div class="body1">
+								<div class="body1-main">
+									<div class="body1m-item1">
+										<a href="#" class="item1-link1">
+											<img src="img/phb1.png" />
+											<p>1</p>
+											<span>美的（Midea）正1.5匹 变频 智弧 冷暖 智能壁挂式卧室调挂机 KFR-</span>
+										</a>
+										<a href="#" class="item1-link2">
+											<img src="img/phb2.png" />
+											<p>2</p>
+											<span>
+												小米（MI）小米电视4X 55英寸 L55M5-AD 2GB+8GB HDR 4K超高清 蓝牙语音遥
+											</span>
+										</a>
+										<a href="#" class="item1-link3">
+											<img src="img/phb3.png" />
+											<p>3</p>
+											<span>小米（MI）小米电视4A 32英寸 L32M5-AZ 1GB+4GB 四核处理器 高清人工智能</span>
+										</a>
+									</div>
+									<div class="body1m-item2">
+										<a href="#" class="item2-link1">
+											<img src="img/phb4.png" />
+											<p>1</p>
+											<span>满300减200三只松鼠 开心果100g坚果炒货零食每日坚果 1袋装</span>
+										</a>
+										<a href="#" class="item2-link2">
+											<img src="img/phb5.png" />
+											<p>2</p>
+											<span>三只松鼠每日坚果零食坚果大礼包孕妇零食小吃榛子巴旦木仁开心果混合果仁30袋</span>
+										</a>
+										<a href="#" class="item2-link3">
+											<img src="img/phb6.png" />
+											<p>3</p>
+											<span>三只松鼠坚果炒货零食特产每日坚果开心果100g/袋</span>
+										</a>
+									</div>
+									<div class="body1m-item3">
+										<a href="#" class="item3-link1">
+											<img src="img/phb7.png" />
+											<p>1</p>
+											<span>Apple iPhone X(A1865) 64GB 深空灰色 移动联通电信4G手机</span>
+										</a>
+										<a href="#" class="item3-link2">
+											<img src="img/phb8.png" />
+											<p>2</p>
+											<span>Apple iPhone X(A1865) 64GB 银色 移动联通电信4G手机</span>
+										</a>
+										<a href="#" class="item3-link3">
+											<img src="img/phb9.png" />
+											<p>3</p>
+											<span>Apple iPhone 8Plus(A1865) 64GB 金色 移动联通电信4G手机</span>
+										</a>
+									</div>
+									<div class="body1m-item4">
+										<a href="#" class="item4-link1">
+											<img src="img/phb1.png" />
+											<p>1</p>
+											<span>美的（Midea）正1.5匹 变频 智弧 冷暖 智能壁挂式卧室调挂机 KFR-</span>
+										</a>
+										<a href="#" class="item4-link2">
+											<img src="img/phb2.png" />
+											<p>2</p>
+											<span>小米（MI）小米电视4X 55英寸 L55M5-AD 2GB+8GB HDR 4K超高清 蓝牙语音遥</span>
+										</a>
+										<a href="#" class="item4-link3">
+											<img src="img/phb3.png" />
+											<p>3</p>
+											<span>小米（MI）小米电视4A 32英寸 L32M5-AZ 1GB+4GB 四核处理器 高清人工智能</span>
+										</a>
+									</div>
+									<div class="body1m-item5">
+										<a href="#" class="item5-link1">
+											<img src="img/phb5.png" />
+											<p>1</p>
+											<span>三只松鼠每日坚果零食坚果大礼包孕妇零食小吃榛子巴旦木仁开心果混合果仁30袋</span>
+										</a>
+										<a href="#" class="item5-link2">
+											<img src="img/phb9.png" />
+											<p>2</p>
+											<span>Apple iPhone 8Plus(A1865) 64GB 金色 移动联通电信4G手机</span>
+										</a>
+										<a href="#" class="item5-link3">
+											<img src="img/phb7.png" />
+											<p>3</p>
+											<span>Apple iPhone X(A1865) 64GB 深空灰色 移动联通电信4G手机</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="rpm-part2">
+					<div class="rpmp-1">
+						<a href="#">
+							<h5>会买专辑</h5>
+							<img src="img/indexjiantou.png" />
+							<span>甄选优质好物</span>
+						</a>
+					</div>
+					<div class="rpmp-2">
+						<div class="rpmp-lunbo1">
+							<ul>
+								<li>
+									<a href="#">
+										<img src="img/hm1.png" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="img/hm2.png" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="img/hm3.png" alt="">
+									</a>
+								</li>
+							</ul>
+							<!--左右箭头-->
+							<p class="rpmp-arrow">
+								<span class="rpmp-left">&lt;</span>
+								<span class="rpmp-right">&gt;</span>
+							</p>
+							<!-- 小圆点按钮 -->
+							<p class="rpmp-focus">
+								<i class="rpmp-current"></i>
+								<i></i>
+								<i></i>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="rpm-part3">
+					<div class="rpmpt-1">
+						<a href="#">
+							<h5>领卷中心</h5>
+							<img src="img/indexjiantou.png" />
+							<span>前往领卷中心</span>
+						</a>
+					</div>
+					<div class="rpmpt-2">
+						<div class="rpmpt-lunbo2">
+							<ul>
+								<li>
+									<a href="#">
+										<img src="img/lj1.png" alt="" class="img1">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="img/lj2.png" alt="" class="img2">
+									</a>
+								</li>
+							</ul>
+							<div class="rpmpt-dots">
+								<span class="dots1"></span>
+								<span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="fashion-sport">
+			<div class="fashion-title">
+				<div class="fashion-title1">
+					<span class="ft1"></span>
+					<h5>时尚达人</h5>
+					<span class="ft2"></span>
+				</div>
+			</div>
+			<div class="fashion-part1">
+				<div class="fashp">
+					<div class="part1-item1">
+						<div class="item1-head">
+							<a href="#">
+								<h3>运动户外</h3>
+								<img src="img/indexjiantou.png" />
+								<span>玩所未玩</span>
+							</a>
+						</div>
+						<div class="item1-body">
+							<a href="#">
+								<img src="img/yundong1.png" class="fashionimg1" />
+								<img src="img/yundong2.png" class="fashionimg2" />
+								<img src="img/yundong3.png" class="fashionimg3" />
+							</a>
+						</div>
+					</div>
+					<div class="part1-item2">
+						<div class="item2-head">
+							<a href="#">
+								<h3>魅力装扮</h3>
+								<img src="img/indexjiantou.png" />
+								<span>精致生活</span>
+							</a>
+						</div>
+						<div class="item2-body">
+							<a href="#">
+								<img src="img/yundong4.png" class="fashionimg1" />
+								<img src="img/yundong5.png" class="fashionimg2" />
+								<img src="img/yundong6.png" class="fashionimg3" />
+							</a>
+						</div>
+					</div>
+					<div class="part1-item3">
+						<div class="item3-frame">
+							<a href="#"></a>
+							<img src="img/big.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="fashion-part2">
+				<div class="fashp">
+					<div class="part1-item3">
+						<div class="item3-frame">
+							<a href="#"></a>
+							<img src="img/big3.png" />
+						</div>
+					</div>
+					<div class="part1-item1">
+						<div class="item1-head">
+							<a href="#">
+								<h3>运动户外</h3>
+								<img src="img/indexjiantou.png" />
+								<span>玩所未玩</span>
+							</a>
+						</div>
+						<div class="item1-body">
+							<a href="#">
+								<img src="img/da2.png" class="fashionimg1" />
+								<img src="img/xiao3.png" class="fashionimg2" />
+								<img src="img/xiao2.png" class="fashionimg3" />
+							</a>
+						</div>
+					</div>
+					<div class="part1-item2">
+						<div class="item2-head">
+							<a href="#">
+								<h3>魅力装扮</h3>
+								<img src="img/indexjiantou.png" />
+								<span>精致生活</span>
+							</a>
+						</div>
+						<div class="item2-body">
+							<a href="#">
+								<img src="img/da1.png" class="fashionimg1" />
+								<img src="img/xiao1.png" class="fashionimg2" />
+								<img src="img/xiao4.png" class="fashionimg3" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fashion-part3">
+				<div class="fashp">
+					<div class="part1-item1">
+						<div class="item1-head">
+							<a href="#">
+								<h3>运动户外</h3>
+								<img src="img/indexjiantou.png" />
+								<span>玩所未玩</span>
+							</a>
+						</div>
+						<div class="item1-body">
+							<a href="#">
+								<img src="img/da2.png" class="fashionimg1" />
+								<img src="img/xiao3.png" class="fashionimg2" />
+								<img src="img/xiao4.png" class="fashionimg3" />
+							</a>
+						</div>
+					</div>
+					<div class="part1-item2">
+						<div class="item2-head">
+							<a href="#">
+								<h3>魅力装扮</h3>
+								<img src="img/indexjiantou.png" />
+								<span>精致生活</span>
+							</a>
+						</div>
+						<div class="item2-body">
+							<a href="#">
+								<img src="img/yundong4.png" class="fashionimg1" />
+								<img src="img/yundong5.png" class="fashionimg2" />
+								<img src="img/yundong6.png" class="fashionimg3" />
+							</a>
+						</div>
+					</div>
+					<div class="part1-item3">
+						<div class="item3-frame">
+							<a href="#"></a>
+							<img src="img/big2.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="more">
+			<div class="more-title">
+				<div class="more-title1">
+					<span class="mt1"></span>
+					<h5>还没逛够</h5>
+					<span class="mt2"></span>
+				</div>
+			</div>
+			<div class="more-content">
+				<ul class="more-list">
+					<li class="list-item">
+						<img src="img/more0.png" />
+						<span>找相似</span>
+					</li>
+					<li class="list-item">
+						<img src="img/more1.png" />
+						<span>找相似</span>
+					</li>
+					<li class="list-item">
+						<img src="img/more2.png" />
+						<span>找相似</span>
+					</li>
+					<li class="list-item">
+						<img src="img/more3.png" />
+						<span>找相似</span>
+					</li>
+					<li class="list-item">
+						<img src="img/more4.png" />
+						<span>找相似</span>
+					</li>
+					<li class="list-item">
+						<img src="img/more5.png" />
+						<span>找相似</span>
+					</li>
+					<li class="list-item">
+						<img src="img/more7.png" />
+						<span>找相似</span>
+					</li>
+					<li class="list-item">
+						<img src="img/more8.png" />
+						<span>找相似</span>
+					</li>
+					<li class="list-item">
+						<img src="img/more9.png" />
+						<span>找相似</span>
+					</li>
+					<li class="list-item">
+						<img src="img/more5.png" />
+						<span>找相似</span>
+					</li>
+					<li class="list-item">
+						<img src="img/more7.png" />
+						<span>找相似</span>
+					</li>
+					<li class="list-item">
+						<img src="img/more0.png" />
+						<span>找相似</span>
+					</li>
+					<li class="list-item">
+						<img src="img/more3.png" />
+						<span>找相似</span>
+					</li>
+					<li class="list-item">
+						<img src="img/more2.png" />
+						<span>找相似</span>
+					</li>
+					<li class="list-item">
+						<img src="img/more1.png" />
+						<span>找相似</span>
+					</li>
+					<li class="list-item">
+						<img src="img/more9.png" />
+						<span>找相似</span>
+					</li>
+					<li class="list-item">
+						<img src="img/more10.png" />
+						<span>找相似</span>
+					</li>
+					<li class="list-item">
+						<img src="img/more6.png" />
+						<span>找相似</span>
+					</li>
+					<li class="list-item">
+						<img src="img/more3.png" />
+						<span>找相似</span>
+					</li>
+					<li class="list-item">
+						<img src="img/more10.png" />
+						<span>找相似</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- 底部部分  start -->
+		<div class="footer">
+			<img src="img/alibaba.png" />
+		</div>
 
 
+
+		<!-- 右侧楼梯导航开始开始 -->
+		<div class="toolbars">
+			<ul>
+				<li class="jdvip">
+					<i></i>
+					<a class="toolbars-ico" href="#"></a>
+					<a class="flex" href="#">京东会员</a>
+				</li>
+				<li class="cart">
+					<a class="toolbars-ico" href="#"></a>
+					<a class="flex" href="#">购物车</a>
+				</li>
+				<li class="follow">
+					<a class="toolbars-ico" href="#"></a>
+					<a class="flex" href="#">我的关注</a>
+				</li>
+				<li class="message">
+					<a class="toolbars-ico" href="#"></a>
+					<a class="flex" href="#">我的消息</a>
+				</li>
+				<li class="jimi">
+					<a class="toolbars-ico" href="#"></a>
+					<a class="flex" href="#">咨询JIMI</a>
+				</li>
+				<li class="feedback">
+					<a class="toolbars-ico" href="#"></a>
+					<a class="flex" href="#">反馈</a>
+				</li>
+			</ul>
+		
+			<div class="toolbars-footer">
+				<a class="toolbars-ico" href="#"></a>
+				<a class="flex" href="#">顶部</a>
+			</div>
+		</div>
+		<!-- 右侧楼梯导航结束 -->
 
 		<script type="text/javascript" src="js/index-searchbox.js"></script>
 		<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
