@@ -10,77 +10,42 @@ var babel = require("gulp-babel");
 var cleancss = require("gulp-clean-css");//压缩css文件
 
 //调用gulp的task方法创建任务
-
-gulp.task("copyIndex",function(){
-	gulp.src("*.html")
-	.pipe(gulp.dest("dist"))
-	.pipe(connect.reload());//浏览器自动刷新
+//拷贝html
+gulp.task("Test_copy",function(){
+	gulp.src('*.html').pipe(gulp.dest("dist")).pipe(connect.reload());
 });
-
-
-gulp.task("copyImg",function(){
-	gulp.src("img/*.{jpg,png}")
-	.pipe(gulp.dest("dist/img"));
-})
-
-
-gulp.task("copyJs",function(){
-	gulp.src("js/*.js")
-	.pipe(gulp.dest("dist/js"));
-})
-
-
-gulp.task("copyCss",function(){
-	gulp.src("css/*.css")
-	.pipe(gulp.dest("dist/css"));
-})
-
-
-gulp.task("server",function(){
-	connect.server({
-		root:"dist",
-		livereload:true,
-	});
-})
-
-
-gulp.task("default",["server","watch"]);
-
-
-gulp.task('scripts',function(){
-	return gulp.src(["js/index.js","js/cart.js","js/detail.js","js/list.js","js/login.js","js/regist.js"])//所有is下的js文件
-	.pipe(concat('mix.js'))//合并的文件名    混合
-	.pipe(gulp.dest('dist/js'))//放到dist的js文件夹里
-	.pipe(uglify())//压缩
-	.pipe(rename('mix.min.js'))//压缩以后文件名重命名
-	.pipe(gulp.dest('dist/js')); 
-})
-
-gulp.task("sass",function(){
-	gulp.src("sass/*.scss")
-	.pipe(sourcemaps.init())//关联起来 初始化
-	.pipe(sass({outputStyle:"compressed"}))//深压缩
-	.pipe(sourcemaps.write())
-	.pipe(gulp.dest("dist/css"))
-	.pipe(connect.reload());
-})
-
-
-gulp.task("watch",function(){//监控并自动刷新
-	gulp.watch("*.html",["copyIndex"]);
-	gulp.watch("sass/*.scss",["sass"]);
-	//还要写js 看到时候js压缩写到那  先监听这两个 index 和 sass
-	//图片回来copy带dis里面
-})
-
-
-gulp.task('csscompress',function(){ 
-	return gulp.src("css/*.css")//所有css下的css文件
-	.pipe(concat('mix.css'))//合并的文件名  想好写
-	.pipe(gulp.dest('dist/css'))
-	.pipe(cleancss())
-	.pipe(rename('mix.min.css'))//压缩以后添加的文件名
-	.pipe(gulp.dest('dist/css'))//再把压缩的文件添加dist
-	.pipe(connect.reload());
-})
-
+//拷贝图片
+ gulp.task("img_copy",function(){
+	 gulp.src("img/**").pipe(gulp.dest("dist/img")).pipe(connect.reload());
+ })
+  //拷贝js
+ gulp.task("jsCopy",function(){
+ 	 gulp.src(["js/*.js"]).pipe(gulp.dest("dist/js")).pipe(connect.reload());
+ });
+  //拷贝sass
+ gulp.task("css",function(){
+ 	gulp.src("css/**")
+ 	.pipe(sourcemaps.init())
+ 	.pipe(sass({outputStyle: 'compressed'}))
+ 	.pipe(sourcemaps.write())
+ 	.pipe(gulp.dest("dist/css")).pipe(connect.reload());
+ }); 
+  //实时监听
+ gulp.task("default",["server","watch"]);
+ //监听
+ gulp.task("watch",function(){
+ 	 gulp.watch("*.html",["Test_copy"]);
+ 	  gulp.watch("sass/*.scss",["sass"]);
+ 	 gulp.watch("html/*.html",["html_copy"]);
+ 	 gulp.watch("img/**",["img_copy"]);
+	  gulp.watch("js/*.js",["jsCopy"]);
+	  gulp.watch("font/**",["fontCopy"]);
+ });
+ //开启本地服务
+ gulp.task("server",function(){
+	 connect.server({
+		 root:"dist",
+		 livereload:true
+		 }
+	 );
+ });
