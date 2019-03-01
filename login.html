@@ -4,8 +4,12 @@
 		<meta charset="UTF-8">
 		<title>京东-欢迎登录</title>
 		<link rel="stylesheet" href="css/login.css" />
+		<script src="js/cookie.js" type="text/javascript" charset="UTF-8"></script>
+		<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="UTF-8"></script>	
+		<script src="js/login.js" type="text/javascript" charset="UTF-8"></script>	
 	</head>
 	<body>
+		<!--登录页面  header部分 start-->
 		<div class="login-header">
 			<a href="#" class="login-logo"></a>
 			<div class="login-title">
@@ -15,8 +19,10 @@
 				<a href="#">登录页面，调查问卷</a>
 			</div>
 		</div>
+		<!--登录页面  header部分 end-->
 		
 		
+		<!--登录页面  内容部分 start-->
 		<div class="login-content">
 			<div class="login-reminder">
 				<div class="reminder">
@@ -32,35 +38,39 @@
 						<div class="loginform-part2">
 							账户登录
 						</div>
-						<div class="loginform-part3">
-							<div class="login-username">
-								<img src="img/loginuser.png" />
-								<input id="login-username" type="text" placeholder="邮箱/用户名" value=""/>
+						<form>
+							<div class="loginform-part3">
+								<div class="login-username">
+									<img src="img/loginuser.png" />
+									<input id="login-username" type="text" placeholder="邮箱/用户名" value=""/>
+								</div>
+								<div class="login-password">
+									<img src="img/loginpassword.png" />
+									<input id="login-password" type="password" placeholder="密码" value=""/>
+								</div>
+								<p class="forget-password">忘记密码</p>
+								<input id="loginbtn" class="loginbtn" type="button" value="登       录"/>
 							</div>
-							<div class="login-password">
-								<img src="img/loginpassword.png" />
-								<input id="login-password" type="text" placeholder="密码" value=""/>
-							</div>
-							<p class="forget-password">忘记密码</p>
-							<input id="loginbtn" class="loginbtn" type="submit" value="登       录"/>
-						</div>
+						</form>
 						<div class="loginform-part4">
 							<div class="login-link1">
 								<a class="loginlink-1" href="#">QQ</a>
 								<a class="loginlink-2" href="#">微信</a>
 							</div>
 							<div class="login-link2">
-								<a class="register-now" href="http://127.0.0.1:8020/jd-project/regist.html">立即注册</a>
+								<a class="register-now" href="http://127.0.0.1:8020/jd-project/regist.html" target="_blank">立即注册</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<!--登录页面  内容部分 end-->
 		
-		
+		<!--登录页面  footer部分 start-->
 		<div class="login-footer">
 			<img src="img/loginfooter.png" />
 		</div>
+		<!--登录页面  footer部分 end-->
 	</body>
 </html>
