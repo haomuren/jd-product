@@ -2,8 +2,687 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>京东-购物车</title>
+		<link rel="stylesheet" href="css/cart.css" />
+		<link rel="stylesheet" href="css/reset.css"/>
+    	<link rel="stylesheet" href="css/carts.css"/>
+    	<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    	<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+    	<script src="js/carts.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
+		<div class="Top">
+			<!--整体-->
+			<div id="top">
+				<!--整个头部-->
+				<div class="topnav">
+					<!--头部导航-->
+					<ul class="topfl">
+						<!--头部导航左半部分-->
+						<div class="indexhtml">
+								<a href="http://127.0.0.1:8020/jd-project/index.html" target="_blank">京东首页</a>
+						</div>
+						<li class="topfl_icon">
+							<!--左半部分  图标文本-->
+							
+							<div class="topfl_text">
+								<!--左半部分 div图标文本-->
+								<img src="img/weizhiicon.png" class="icon" />
+								<!--图标-->
+								<span class="text">北京</span>
+								<!--文本-->
+							</div>
+							<div class="topfl_hide">
+								<!--北京下拉隐藏部分-->
+								<div class="hide_top">
+									<!--隐藏部分 地区-->
+									<div class="item">
+										<!--各个地区-->
+										<a href="#" class="item_tebie">北京</a>
+									</div>
+									<div class="item">
+										<a href="#">上海</a>
+									</div>
+									<div class="item">
+										<a href="#">天津</a>
+									</div>
+									<div class="item">
+										<a href="#">重庆</a>
+									</div>
+									<div class="item">
+										<a href="#">河北</a>
+									</div>
+									<div class="item">
+										<a href="#">山西</a>
+									</div>
+									<div class="item">
+										<a href="#">河南</a>
+									</div>
+									<div class="item">
+										<a href="#">辽宁</a>
+									</div>
+									<div class="item">
+										<a href="#">吉林</a>
+									</div>
+									<div class="item">
+										<a href="#">黑龙江</a>
+									</div>
+									<div class="item">
+										<a href="#">内蒙古</a>
+									</div>
+									<div class="item">
+										<a href="#">江苏</a>
+									</div>
+									<div class="item">
+										<a href="#">安徽</a>
+									</div>
+									<div class="item">
+										<a href="#">浙江</a>
+									</div>
+									<div class="item">
+										<a href="#">福建</a>
+									</div>
+									<div class="item">
+										<a href="#">湖北</a>
+									</div>
+									<div class="item">
+										<a href="#">湖南</a>
+									</div>
+									<div class="item">
+										<a href="#">广东</a>
+									</div>
+									<div class="item">
+										<a href="#">广西</a>
+									</div>
+									<div class="item">
+										<a href="#">江西</a>
+									</div>
+									<div class="item">
+										<a href="#">四川</a>
+									</div>
+									<div class="item">
+										<a href="#">海南</a>
+									</div>
+									<div class="item">
+										<a href="#">贵州</a>
+									</div>
+									<div class="item">
+										<a href="#">云南</a>
+									</div>
+									<div class="item">
+										<a href="#">西藏</a>
+									</div>
+									<div class="item">
+										<a href="#">陕西</a>
+									</div>
+									<div class="item">
+										<a href="#">甘肃</a>
+									</div>
+									<div class="item">
+										<a href="#">青海</a>
+									</div>
+									<div class="item">
+										<a href="#">宁夏</a>
+									</div>
+									<div class="item">
+										<a href="#">新疆</a>
+									</div>
+									<div class="item">
+										<a href="#">港澳</a>
+									</div>
+									<div class="item">
+										<a href="#">台湾</a>
+									</div>
+									<div class="item">
+										<a href="#">钓鱼岛</a>
+									</div>
+									<div class="item">
+										<a href="#">海外</a>
+									</div>
+									<div class="item">
+										<a href="#">山东</a>
+									</div>
+								</div>
+								<div class="hide_down">
+									<!--隐藏部分 国家-->
+									<p class="hd_nation">Available Sites</p>
+									<!--文本-->
+									<ul clas="hd_list">
+										<!--下面的五个国家链接-->
+										<li clas="hd_list_item">
+											<a class="item_link" href="#">
+												<img class="il_icon" src="img/diqiuicon.jpg" />
+												<div class="il_text">Global Site</div>
+											</a>
+										</li>
+										<li clas="hd_list_item">
+											<a class="item_link" href="#">
+												<img class="il_icon" src="img/ruishiicon.jpg" />
+												<div class="il_text">Сайт России</div>
+											</a>
+										</li>
+										<li clas="hd_list_item">
+											<a class="item_link" href="#">
+												<img class="il_icon" src="img/yinniicon.jpg" />
+												<div class="il_text">Situs Indonesia</div>
+											</a>
+										</li>
+										<li clas="hd_list_item">
+											<a class="item_link" href="#">
+												<img class="il_icon" src="img/xibanyaicon.jpg" />
+												<div class="il_text">Sitio de España</div>
+											</a>
+										</li>
+
+										<li clas="hd_list_item">
+											<a class="item_link" href="#">
+												<img class="il_icon" src="img/deguoicon.png" />
+												<div class="il_text">เว็บไซต์ประเทศไทย</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="topfr">
+						<!--头部右半部分-->
+						<li class="topfr_item1">
+							<!--请登录     免费注册-->
+							<a href="http://127.0.0.1:8020/jd-project/login.html" class="link_login" target="_blank">你好，请登录</a>&nbsp;&nbsp;
+							<a href="http://127.0.0.1:8020/jd-project/regist.html" class="link_regist" target="_blank">免费注册</a>
+						</li>
+						<li class="bar"></li>
+						<!--竖条-->
+						<li class="topfr_item2">
+							<!--我的订单-->
+							<a href="#" class="link_order">我的订单</a>
+						</li>
+						<li class="bar"></li>
+						<li class="topfr_item3">
+							<!--我的京东-->
+							<div class="tfr_show">
+								<!--我的京东展示部分-->
+								<a href="#">我的京东</a>
+								<span class="tfricon">▽</span>
+							</div>
+							<div class="tfr_hide">
+								<!--我的京东隐藏部分   上    下  -->
+								<div class="th_top">
+									<div class="tht_left">
+										<!--上半部分  左边-->
+										<div class="item">
+											<a href="#">待处理订单</a>
+										</div>
+										<div class="item">
+											<a href="#">返修退换货</a>
+										</div>
+										<div class="item">
+											<a href="#">降价商品</a>
+										</div>
+									</div>
+									<div class="tht_right">
+										<!--上半部分  右边-->
+										<div class="item">
+											<a href="#">消息</a>
+										</div>
+										<div class="item">
+											<a href="#">我的回答</a>
+										</div>
+										<div class="item">
+											<a href="#">我的关注</a>
+										</div>
+									</div>
+								</div>
+								<div class="th_bottom">
+									<div class="thb_left">
+										<!--下半部分  左边-->
+										<div class="item">
+											<a href="#">我的京豆</a>
+										</div>
+										<div class="item">
+											<a href="#">我的白条</a>
+										</div>
+									</div>
+									<div class="thb_left">
+										<!--上半部分  左边-->
+										<div class="item">
+											<a href="#">我的优惠券</a>
+										</div>
+										<div class="item">
+											<a href="#">我的理财</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="bar"></li>
+						<li class="topfr_item4">
+							<!--京东会员-->
+							<div class="tfr_mem">
+								<a href="#">京东会员</a>
+							</div>
+						</li>
+						<li class="bar"></li>
+						<li class="topfr_item5">
+							<!--企业采购-->
+							<div class="tfr_show1">
+								<!--显示部分-->
+								<a href="#">企业采购</a>
+								<span class="tfricon1">▽</span>
+							</div>
+							<div class="tfr_hide1">
+								<div class="tfr_hide11">
+									<!--隐藏部分-->
+									<div class="item">
+										<a href="#">企业购</a>
+									</div>
+									<div class="item">
+										<a href="#">商品场景馆</a>
+									</div>
+									<div class="item">
+										<a href="#">工业品</a>
+									</div>
+									<div class="item">
+										<a href="#">礼品卡</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="bar"></li>
+						<li class="topfr_item6">
+							<div class="tfr_show2">
+								<!--显示部分-->
+								<a href="#">客户服务</a>
+								<span class="tfricon2">▽</span>
+							</div>
+							<div class="tfr_hide2">
+								<!--隐藏部分-->
+								<div class="item_client">客户</div>
+								<div class="item">
+									<a href="#">帮助中心</a>
+								</div>
+								<div class="item">
+									<a href="#">售后服务</a>
+								</div>
+								<div class="item">
+									<a href="#">在线客服</a>
+								</div>
+								<div class="item">
+									<a href="#">意见建议</a>
+								</div>
+								<div class="item">
+									<a href="#">电话客服</a>
+								</div>
+								<div class="item">
+									<a href="#">客服邮箱</a>
+								</div>
+								<div class="item">
+									<a href="#">金融咨询</a>
+								</div>
+								<div class="item">
+									<a href="#">全球售客服</a>
+								</div>
+								<div class="item">
+									<a href="#">合作招商</a>
+								</div>
+								<div class="item">
+									<a href="#">学习中心</a>
+								</div>
+								<div class="item">
+									<a href="#">商家后台</a>
+								</div>
+								<div class="item">
+									<a href="#">京麦工作台</a>
+								</div>
+								<div class="item">
+									<a href="#">商家帮助</a>
+								</div>
+								<div class="item">
+									<a href="#">规则平台</a>
+								</div>
+							</div>
+						</li>
+						<li class="bar"></li>
+						<li class="topfr_item7">
+							<!--网站导航-->
+							<div class="tfr_show3">
+								<!--显示部分-->
+								<a href="#">网站导航</a>
+								<span class="tfricon3">▽</span>
+							</div>
+							<div class="tfr_hide3">
+								<!--隐藏部分-->
+								<dl class="formula1">
+									<dt>特色主题</dt>
+									<dd class="forl">
+										<div class="item">
+											<a href="#">京东试用</a>
+										</div>
+										<div class="item">
+											<a href="#">京东金融</a>
+										</div>
+										<div class="item">
+											<a href="#">全球售</a>
+										</div>
+										<div class="item">
+											<a href="#">国际站</a>
+										</div>
+										<div class="item">
+											<a href="#">京东会员</a>
+										</div>
+										<div class="item">
+											<a href="#">京东预售</a>
+										</div>
+										<div class="item">
+											<a href="#">买什么</a>
+										</div>
+										<div class="item">
+											<a href="#">俄语站</a>
+										</div>
+										<div class="item">
+											<a href="#">装机大师</a>
+										</div>
+										<div class="item">
+											<a href="#">0元评测</a>
+										</div>
+										<div class="item">
+											<a href="#">港澳售</a>
+										</div>
+										<div class="item">
+											<a href="#">优惠券</a>
+										</div>
+										<div class="item">
+											<a href="#">秒杀</a>
+										</div>
+										<div class="item">
+											<a href="#">闪购</a>
+										</div>
+										<div class="item">
+											<a href="#">印尼站</a>
+										</div>
+										<div class="item">
+											<a href="#">京东金融科技</a>
+										</div>
+										<div class="item">
+											<a href="#">陪伴计划</a>
+										</div>
+										<div class="item">
+											<a href="#">出海招商</a>
+										</div>
+										<div class="item">
+											<a href="#">拍拍</a>
+										</div>
+									</dd>
+								</dl>
+								<dl class="formula2">
+									<dt>行业频道</dt>
+									<dd class="forl">
+										<div class="item">
+											<a href="#">手机</a>
+										</div>
+										<div class="item">
+											<a href="#">智能数码</a>
+										</div>
+										<div class="item">
+											<a href="#">玩3C</a>
+										</div>
+										<div class="item">
+											<a href="#">电脑办公</a>
+										</div>
+										<div class="item">
+											<a href="#">家用电器</a>
+										</div>
+										<div class="item">
+											<a href="#">京鱼座智能</a>
+										</div>
+										<div class="item">
+											<a href="#">服装城</a>
+										</div>
+										<div class="item">
+											<a href="#">京东生鲜</a>
+										</div>
+										<div class="item">
+											<a href="#">家装成</a>
+										</div>
+										<div class="item">
+											<a href="#">母婴</a>
+										</div>
+										<div class="item">
+											<a href="#">食品</a>
+										</div>
+									</dd>
+								</dl>
+								<dl class="formula3">
+									<dt>生活服务</dt>
+									<dd class="forl1">
+										<div class="item">
+											<a href="#">京东众筹</a>
+										</div>
+										<div class="item">
+											<a href="#">白条</a>
+										</div>
+										<div class="item">
+											<a href="#">京东金融App</a>
+										</div>
+										<div class="item">
+											<a href="#">京东小金库</a>
+										</div>
+										<div class="item">
+											<a href="#">理财</a>
+										</div>
+										<div class="item">
+											<a href="#">话费</a>
+										</div>
+										<div class="item">
+											<a href="#">水电煤</a>
+										</div>
+										<div class="item">
+											<a href="#">彩票</a>
+										</div>
+										<div class="item">
+											<a href="#">旅行</a>
+										</div>
+										<div class="item">
+											<a href="#">机票酒店</a>
+										</div>
+										<div class="item">
+											<a href="#">电影票</a>
+										</div>
+									</dd>
+								</dl>
+								<dl class="formula4">
+									<dt>更多精选</dt>
+									<dd class="forl1">
+										<div class="item">
+											<a href="#">合作招商</a>
+										</div>
+										<div class="item">
+											<a href="#">京东通信</a>
+										</div>
+										<div class="item">
+											<a href="#">京东E卡</a>
+										</div>
+										<div class="item">
+											<a href="#">企业采购</a>
+										</div>
+										<div class="item">
+											<a href="#">服务市场</a>
+										</div>
+										<div class="item">
+											<a href="#">办公生活馆</a>
+										</div>
+										<div class="item">
+											<a href="#">乡村招募</a>
+										</div>
+										<div class="item">
+											<a href="#">校园加盟</a>
+										</div>
+										<div class="item">
+											<a href="#">京东邦</a>
+										</div>
+										<div class="item">
+											<a href="#">京东社区</a>
+										</div>
+										<div class="item">
+											<a href="#">游戏社区</a>
+										</div>
+									</dd>
+								</dl>
+							</div>
+						</li>
+						<li class="bar"></li>
+						<li class="topfr_item8">
+							<div class="tfr_show4">手机京东</div>
+							<div class="tfr_show5">
+								<img src="img/jd1.png" class="jd1" />
+							</div>
+							<div class="tfr_hide4">
+								<div class="tfrh1">
+									<div class="tfrh1_l">
+										<img src="img/jd1.png" class="jd1" />
+									</div>
+									<div class="tfrh1_r">
+										<h5 class="tfrh1_title">手机京东</h5>
+										<p class="tfrh1_content">新人专享大礼包</p>
+										<p class="“tfrh1_content1">
+											<a href="#" class="iphone"></a>
+											<a href="#" class="android"></a>
+											<a href="#" class="ipad"></a>
+										</p>
+									</div>
+								</div>
+								<div class="tfrh2">
+									<div class="tfrh2_l">
+										<img src="img/jd2.gif" class="jd2" />
+									</div>
+									<div class="tfrh2_r">
+										<h5 class="tfrh2_title">关注京东微信</h5>
+										<p class="tfrh2_content">微信扫一扫关注新粉最高180元惊喜礼包</p>
+									</div>
+								</div>
+								<div class="tfrh3">
+									<div class="tfrh3_l">
+										<img src="img/jd3.gif" class="jd3" />
+									</div>
+									<div class="tfrh3_r">
+										<h5 class="tfrh1_title">京东金融客户端</h5>
+										<p class="tfrh1_content">新人专享大礼包</p>
+										<p class="tfrh1_content1">
+											<a href="#" class="iphone1"></a>
+											<a href="#" class="android1"></a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="cart-logobg">
+			<img src="img/cartlogo.png" />
+			<div class="shop_cart">
+					<div class="shop_cart1">
+						<span class="sc_lefticon"></span>
+						<a href="http://127.0.0.1:8020/jd-project/cart.html" class="my_sc">我的购物车</a>
+						<span class="sc_righticon">0</span>
+						<div class="sc_hidden">
+							<div class="sc_hidden1">
+								<div class="sc_empty">
+									<span class="sc_empty_img"></span>
+									<p class="sc_empty_hint">购物车还没有商品，赶紧选购吧！</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+		
+		<section class="cartMain">
+	        <div class="cartMain_hd">
+	            <ul class="order_lists cartTop">
+	                <li class="list_chk">
+	                    <!--所有商品全选-->
+	                    <input type="checkbox" id="all" class="whole_check">
+	                    <label for="all"></label>
+	                    全选
+	                </li>
+	                <li class="list_con">商品信息</li>
+	                <li class="list_info">商品参数</li>
+	                <li class="list_price">单价</li>
+	                <li class="list_amount">数量</li>
+	                <li class="list_sum">金额</li>
+	                <li class="list_op">操作</li>
+	            </ul>
+	        </div>
+	
+	        <div class="cartBox">
+	            <div class="shop_info">
+	                <div class="all_check">
+	                    <!--店铺全选-->
+	                    <input type="checkbox" id="shop_a" class="shopChoice">
+	                    <label for="shop_a" class="shop"></label>
+	                </div>
+	                <div class="shop_name">
+	                    店铺：<a href="javascript:;">一号店出品</a>
+	                </div>
+	            </div>
+	            <div class="order_content">
+	                <ul class="order_lists">
+	                    <li class="list_chk">
+	                        <input type="checkbox" id="checkbox_2" class="son_check">
+	                        <label for="checkbox_2"></label>
+	                    </li>
+	                    <li class="list_con">
+	                        <div class="list_img"><a href="javascript:;"><img src="./img/1.png" alt=""></a></div>
+	                        <div class="list_text"><a href="javascript:;">盐津铺子 休闲零食 零食大礼包 自营 七夕情人节礼物 辣条 送女友1320g</a></div>
+	                    </li>
+	                    <li class="list_info">
+	                        <p>规格：默认</p>
+	                        <p>尺寸：1320g</p>
+	                    </li>
+	                    <li class="list_price">
+	                        <p class="price">¥1980</p>
+	                    </li>
+	                    <li class="list_amount">
+	                        <div class="amount_box">
+	                            <a href="javascript:;" class="reduce reSty">-</a>
+	                            <input type="text" value="1" class="sum">
+	                            <a href="javascript:;" class="plus">+</a>
+	                        </div>
+	                    </li>
+	                    <li class="list_sum">
+	                        <p class="sum_price">￥1980</p>
+	                    </li>
+	                    <li class="list_op">
+	                        <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+	        <!--底部-->
+	        <div class="bar-wrapper">
+	            <div class="bar-right">
+	                <div class="piece">已选商品<strong class="piece_num">0</strong>件</div>
+	                <div class="totalMoney">共计: <strong class="total_text">0.00</strong></div>
+	                <div class="calBtn"><a href="javascript:;">结算</a></div>
+	            </div>
+	        </div>
+	    </section>
+	    <section class="model_bg"></section>
+	    <section class="my_model">
+	        <p class="title">删除宝贝<span class="closeModel">X</span></p>
+	        <p>您确认要删除该宝贝吗？</p>
+	        <div class="opBtn">
+	        	<a href="javascript:;" class="dialog-sure">确定</a>
+	        	<a href="javascript:;" class="dialog-close">关闭</a>
+	        </div>
+    	</section>		
+		
+		<div class="footer">
+			<img src="img/alibaba.png" />
+		</div>
+   	
 	</body>
 </html>
