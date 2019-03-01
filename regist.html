@@ -4,8 +4,12 @@
 		<meta charset="UTF-8">
 		<title>京东-欢迎注册</title>
 		<link rel="stylesheet" href="css/regist.css" />
+		<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="UTF-8"></script>
+		<script src="js/regist.js" type="text/javascript" charset="UTF-8"></script>
+		
 	</head>
 	<body>
+		<!--注册页面  header部分 start-->
 		<div class="regist-header">
 			<a href="#" class="regist-logo"></a>
 			<div class="regist-title">
@@ -13,9 +17,12 @@
 			</div>
 			<div class="have-account">
 				<p>已有账号？</p>
-				<a href="http://127.0.0.1:8020/jd-project/login.html">请登录＞</a>
+				<a href="http://127.0.0.1:8020/jd-project/login.html" target="_blank">请登录＞</a>
 			</div>
 		</div>
+		<!--注册页面  header部分 end-->
+		
+		<!--注册页面 内容部分  start-->
 		<div class="regist-content">
 			<div class="regist-message">
 				<form>
@@ -29,7 +36,7 @@
 					<div id="username-hint"></div>
 					<div class="message-password">
 						<p>密&nbsp;&nbsp;码 :</p>
-						<input id="password" type="text" value=""/>
+						<input id="password" type="password" value=""/>
 					</div>
 					<div id="password-hint"></div>
 					<div class="message-email">
@@ -39,8 +46,8 @@
 					<div id="email-hint"></div>
 					<div class="message-gender">
 						<p>性&nbsp;&nbsp;别 :</p>
-						<input id="gender-man" type="radio" value="man" name="sex"/>&nbsp;男
-						<input id="gender-woman" type="radio" value="woman" name="sex"/>&nbsp;女
+						<input id="gender-man" type="radio" value="男" name="sex"/>&nbsp;男
+						<input id="gender-woman" type="radio" value="女" name="sex"/>&nbsp;女
 					</div>
 					<div id="gender-hint"></div>
 					<input id="regist-mess" type="button" value="点击按钮完成注册"/>
@@ -48,13 +55,12 @@
 				</form>
 			</div>
 		</div>
+		<!--注册页面 内容部分 end-->
 		
+		<!--注册页面 尾部部分 start-->
 		<div class="regist-footer">
 			<img src="img/registfooter.png" />
 		</div>
-		
-		
-		<script src="js/jquery-1.11.0.js" ></script>
-		<script src="js/regist.js"></script>
+		<!--注册页面 尾部部分 end-->	
 	</body>
 </html>
