@@ -116,7 +116,7 @@ $(function() {
 					if(data.msg == "成功"){
 						$("#regist-hint").html('注册成功!2s后将自动跳转到登录界面...');
 						setTimeout(function(){
-							window.open("http://127.0.0.1:8020/jd-project/login.html");
+							window.open("./login.html");
 						},4000);
 					}else{
 						alert("注册失败！请稍后重试！");

@@ -178,11 +178,11 @@ $(function () {
 	 			}
 	 			for(let j = 0; j < $(".list-submit").length; j++) {
 	 				$(".list-submit").eq(j).on("click", function() {
-	 				   	window.open('http://127.0.0.1:8020/jd-project/detail.html');
+	 				   	window.open('./detail.html');
 	 				  				    
 	 					/*setCookie('id',rel.data[1].id,7);
 	 					var oId = $(".list-submit").eq(j).attr('id');*/
-	 					//window.location.href = "http://127.0.0.1:8020/jd-project/detail.html?aid=" + oId;
+	 					//window.location.href = "./detail.html?aid=" + oId;
 	 				});
 	 			}
 	 		}

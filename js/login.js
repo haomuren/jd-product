@@ -17,7 +17,7 @@ $(function(){
 					//添加cookie 是为了跳转到首页时,能getCookie时,找到登录的信息  从而赋值到相应的文本框中
 					setCookie("name",username,7);  //把name这个属性和属性值添加到cookie中
 					setCookie("token",data.data.token,7);
-					window.open("http://127.0.0.1:8020/jd-project/index.html");//跳转首页
+					window.open("./index.html");//跳转首页
 				}else{
 					alert("登录失败");
 				}
